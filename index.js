@@ -80,9 +80,13 @@ function writeFileSync (file, obj, options = {}) {
 
 const jsonfile = {
   readFile,
+  rF: readFile,
   readFileSync,
+  rFS: readFileSync,
   writeFile,
-  writeFileSync
+  wF: writeFile,
+  writeFileSync,
+  wFS: writeFileSync
 }
 
 module.exports = jsonfile
